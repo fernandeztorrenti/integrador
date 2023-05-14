@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background: #f1fbff; 	/* color de fondo */
+}
+
+.section-padding { /* espacio entre las secciones */
+	padding: 100px 0;
+}
+
+.carousel-item {		/* SETEO de las imagenes del #carruselL */
+	height: 85vh;    /* ALTURA relative al espacion disponible */
+	min-height: 300px;	/* ALTURA ?? minima */
+}
+
+.carousel-caption { /* a las leyendas del #carruselL */
+	bottom:  100px;	 /* levanto a las leyendas */
+	z-index: 2;     /* se muestra delante de */
+	text-align:right;
+
+}
+
+.carousel-caption h5 { /* agrando la letra titulo de las leyendas del #carruselL  "Conf Bs As" */
+	font-size: 35px;
+	/* text-transform: uppercase; */	/* mayuscula */
+	/* letter-spacing: 2px; */	  	/* espacio entre letras */
+	/* margin-top: 25px; */
+
+}
+
+.carousel-caption p {	/* seteo texto leyendas del #carrusell */
+	font-size: 15px;  /* tamaño texto */
+	line-height: 1,5;  /* interlineado */
+
+
+}
+
+.carousel-inner:before { /* efecto del #carrusell */
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);  /* 0.3 controlo la transparencia de la imagen */
+	z-index: 1;
+}
+
+/* control boton amburguesa  ??? */
+/* .navbar .getstarted { 
+	background: #106eea;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+} */
+
+
+.navbar-brand span{ /* seteo tamaño del txt de la leyenda "Conf. Bs As"  en el #NAV  */
+	/* font-weight: 600; */
+	font-size: 30px;
+	/* letter-spacing: 1px; */
+}
+
+
+.navbar-nav a { /* formato del texto de los #NAV */
+	font-size: 18px;
+	/* text-transform: uppercase; */
+	font-weight: 500;  /* cuanto de negrita */
+}
+
+.navbar-nav a p { /* color especial al "comprar tiket" en el #NAV*/
+color: greenyellow;
+}
+
+	/* desactivado USE →navbar-dark */
+/* .navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+} */
+/* text-transform: uppercase; */
+
+/* .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+} */
+
+.cinta { /* hago negrita los STICKER de colores de los card */
+	font-weight: bold;
+}
+
+.oradores .card { /* da sombrita a ventanitas CARD*/
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.w-100 {
+	height: 100vh;
+}
+
+/* control boton amburguesa seteos*/
+/* .navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+} */
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	/* .about-text {
+		padding-top: 50px;
+	} */
+	.card {
+		margin-bottom: 30px;
+	}
+}
